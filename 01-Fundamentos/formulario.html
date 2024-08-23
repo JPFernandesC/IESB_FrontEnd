@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <h1>Formulario</h1>
+
+    <form>
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome">
+
+        <br>
+        <br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="number" name="telefone">
+
+        <br>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email">
+
+        <br>
+        <br>
+
+        <label for="senha">Senha:</label>
+        <input type="text" name="senha">
+
+        <br>
+        <br>
+
+        Sexo:
+        <label class="radio-option">
+            <input type="radio" name="sexo" value="masculino">
+            Masculino
+        </label>
+
+
+        <label class="radio-option">
+            <input type="radio" name="sexo" value="feminino">
+            Feminino
+
+            <br>
+            <br>
+
+            <form action="" id="form-chave">
+                <label for="uf">Uf</label>
+                <select name="uf" id="uf">
+                    <option [value]="uf" *ngfor="Let uf of ufs">DF</option>
+                    <option [value]="uf" *ngfor="Let uf of ufs">SC</option>
+                    <option [value]="uf" *ngfor="Let uf of ufs">RJ</option>
+                    <option [value]="uf" *ngfor="Let uf of ufs">SP</option>
+                </select>
+            </form>
+
+            <br>
+            <br>
+
+            <p>Hobbies:</p>
+    <fieldset style="border: 0,px solid #2b2b2b; width: 500px; height: 20px; ">
+        
+            <div class="checkbox-group">
+                <label class="custom-checkbox">
+                    <input type="checkbox" name="Futebol">
+                    <span class="checkbox-box"></span>
+                    Futebol
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" name="Xadrez">
+                    <span class="checkbox-box"></span>
+                    Xadrez
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" name="Esportes">
+                    <span class="checkbox-box"></span>
+                    Esportes
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" name="Música">
+                    <span class="checkbox-box"></span>
+                    Música
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" name="Cinema">
+                    <span class="checkbox-box"></span>
+                    Cinema
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" name="Leitura">
+                    <span class="checkbox-box"></span>
+                    Leitura
+                </label>
+            </div>
+        </fieldset>
+    
+            <br>
+            <br>
+
+            <div class="form-floating">
+                Observações:<textarea class="form-control"  id="floatingTextarea1" style="height: 100px"></textarea>
+                <label for="floatingTextarea1"></label>
+              </div>
+              
+              <br>
+              <br>
+
+            <button type="menu"><a href="./index.html">Voltar</a> </button>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+
+            <br>
+            <br>
+        
+
+    </form>
+
+</body>
+
+</html>
